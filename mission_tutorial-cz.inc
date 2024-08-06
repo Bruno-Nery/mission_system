@@ -4,7 +4,7 @@
 stock czGetMissionTitle(missionid)
 {
     new MissionTitle[128];
-    if(missionid == mts_AlugarMotoFaggio) MissionTitle = "Pronajmìte si vozidlo.";
+    if(missionid == mts_AlugarMotoFaggio) MissionTitle = "Pronajmï¿½te si vozidlo.";
     else if(missionid == mts_MochilaMelhor)  MissionTitle = "xxx";
     else if(missionid == mts_Capacete)  MissionTitle = "xxx";
     else if(missionid == mts_TirarLicencaTerrestreA)  MissionTitle = "xxx";
@@ -195,15 +195,15 @@ stock czGetMissionContent(missionid)
 {
     new str[256], final[3072];
     if(missionid == mts_AlugarMotoFaggio) {
-        format(str, sizeof(str), "* Pronajmìte si {FFD700}Faggio{FFFFFF}, abyste se mohli pohybovat po mìstì a plnit své cíle. *\n");
+        format(str, sizeof(str), "* Pronajmï¿½te si {FFD700}Faggio{FFFFFF}, abyste se mohli pohybovat po mï¿½stï¿½ a plnit svï¿½ cï¿½le. *\n");
         strcat(final, str);
-        format(str, sizeof(str), "* Na mapì jsou místa, která pronajímají vozidla! *\n");
+        format(str, sizeof(str), "* Na mapï¿½ jsou mï¿½sta, kterï¿½ pronajï¿½majï¿½ vozidla! *\n");
         strcat(final, str);
-        format(str, sizeof(str), "Chcete-li najít, stisknìte:\n");
+        format(str, sizeof(str), "Chcete-li najï¿½t, stisknï¿½te:\n");
         strcat(final, str);
-        format(str, sizeof(str), "{FFD700}Y{FFFFFF} – {FFD700}GPS{FFFFFF} – {FFD700}Vozidla{FFFFFF} – {FFD700}Pùjèovny aut a motocyklù{FFFFFF}\n");
+        format(str, sizeof(str), "{FFD700}Y{FFFFFF} ï¿½ {FFD700}GPS{FFFFFF} ï¿½ {FFD700}Vozidla{FFFFFF} ï¿½ {FFD700}Pï¿½jï¿½ovny aut a motocyklï¿½{FFFFFF}\n");
         strcat(final, str);
-        format(str, sizeof(str), "* Když dorazíte na místo, stisknìte {FFD700}Y{FFFFFF} a vyberte vozidlo {FFD700}Faggio{FFFFFF}. *\n");
+        format(str, sizeof(str), "* Kdyï¿½ dorazï¿½te na mï¿½sto, stisknï¿½te {FFD700}Y{FFFFFF} a vyberte vozidlo {FFD700}Faggio{FFFFFF}. *\n");
         strcat(final, str);
     }
     else if(missionid == mts_MochilaMelhor)  {
